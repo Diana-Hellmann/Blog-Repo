@@ -1,0 +1,37 @@
+/*mobile*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+.artikel-layout{
+    display: flex;
+}
+article{
+    width: 60%;
+}
+aside{
+    width: 30%;
+}
+.img-autor{
+    width: 50px;
+    height: 50px;
+}
+.img-artikel{
+    /*automatisches skalieren*/
+    width: 100%;
+    height: auto;
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 41rem) {
+    /*kleiner Test zum orientieren*/
+    /* body{
+        background-color: rebeccapurple;
+    } */
+    
+}
