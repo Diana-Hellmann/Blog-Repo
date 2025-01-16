@@ -9,6 +9,7 @@
 }
 .artikel-layout{
     display: flex;
+    flex-direction: column;
 }
 article{
     width: 60%;
@@ -28,10 +29,14 @@ aside{
 
 
 /*Desktop*/
-@media screen and (min-width: 41rem) {
+@media screen and (min-width: 40rem) {
     /*kleiner Test zum orientieren*/
     /* body{
         background-color: rebeccapurple;
     } */
+    .artikel-layout{
+        display: flex;
+        flex-direction: row;
+    }
     
 }
