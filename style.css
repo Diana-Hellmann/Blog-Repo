@@ -1,30 +1,9 @@
 /*mobile*/
+/*für mehr System mobile separat machen, wenn Desktop fertig*/
 *{
     margin: 0;
     padding: 0;
-}
-.container{
-    width: 70%;
-    margin: auto;
-}
-.artikel-layout{
-    display: flex;
-    flex-direction: column;
-}
-article{
-    width: 60%;
-}
-aside{
-    width: 30%;
-}
-.img-autor{
-    width: 50px;
-    height: 50px;
-}
-.img-artikel{
-    /*automatisches skalieren*/
-    width: 100%;
-    height: auto;
+    box-sizing: border-box;
 }
 
 
@@ -34,9 +13,76 @@ aside{
     /* body{
         background-color: rebeccapurple;
     } */
+    body{
+        font-family: serif;
+        color: rgb(41, 25, 25);
+        border-top: 5px solid rgb(2, 129, 2);
+    } 
     .artikel-layout{
+        width: 100%;
         display: flex;
         flex-direction: row;
+        align-items: start;
+        gap: 5rem;
     }
+    .container{
+        /*keine Flexbox, darum px statisch, vermeiden*/
+        width: 65%;
+        margin: auto;
+    }
+    .main-header{
+        background-color: rgb(249, 236, 222);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+        margin-bottom: 4em;
+    }
+    h1{
+        font-size: 28px;
+        color: rgb(2, 112, 2);
+    }
+    nav a:link{
+        margin-right: 1em;
+        font-size: 20px;
+        color: rgb(2, 112, 2);
+        font-weight: 500;
+        text-decoration: none;
+    }
+    nav a:visited{
+        color: rgb(2, 112, 2);
+    }
+    nav a:hover{
+        color: rgb(2, 185, 2);
+        text-decoration: underline;
+    }
+    article{
+        /* width: 60%; */
+        /* width: 800px; */
+        /*Test*/
+        /* flex: 1 1 800px;
+        min-width: 0;
+        overflow-x: hidden; */
+        flex: 1 1 800px;
+    }
+    aside{
+        /* width: 40%; */
+        /* width: 400px; */
+        background-color: rgb(249, 236, 222);
+        /*Test*/
+        flex: 1 1 400px;
+        /*min-width: 0;
+        overflow-x: hidden; */
+    }
+    .img-autor{
+        width: 50px;
+        height: 50px;
+    }
+    .img-artikel{
+        /*automatisches skalieren*/
+        width: 100%;
+        height: auto;
+    }
+    
     
 }
