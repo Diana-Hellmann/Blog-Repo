@@ -15,6 +15,7 @@
     } */
     body{
         font-family: serif;
+        font-size: 24px;
         color: rgb(41, 25, 25);
         border-top: 5px solid rgb(2, 129, 2);
     } 
@@ -45,44 +46,86 @@
     nav a:link{
         margin-right: 1em;
         font-size: 20px;
-        color: rgb(2, 112, 2);
         font-weight: 500;
+    }
+    a:link{
+        color: rgb(2, 112, 2);
         text-decoration: none;
     }
-    nav a:visited{
+    a:visited{
         color: rgb(2, 112, 2);
     }
-    nav a:hover{
+    a:hover{
         color: rgb(2, 185, 2);
         text-decoration: underline;
     }
-    article{
-        /* width: 60%; */
-        /* width: 800px; */
-        /*Test*/
-        /* flex: 1 1 800px;
-        min-width: 0;
-        overflow-x: hidden; */
-        flex: 1 1 800px;
-    }
-    aside{
-        /* width: 40%; */
-        /* width: 400px; */
-        background-color: rgb(249, 236, 222);
-        /*Test*/
-        flex: 1 1 400px;
-        /*min-width: 0;
-        overflow-x: hidden; */
+    .img-container{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
     }
     .img-autor{
-        width: 50px;
-        height: 50px;
+        width: 3em;
+        height: auto;
+        margin-right: 1em;
+    }
+    .name-autor{
+        font-style: italic;
+        font-size: 18px;
     }
     .img-artikel{
         /*automatisches skalieren*/
-        width: 100%;
+        width: 70%;
         height: auto;
+        margin-bottom: 2em;
     }
+    article{
+        flex: 1 1 800px;
+    }
+    h2{
+        font-size: 38px;
+        color: rgb(2, 112, 2);
+        margin-bottom: 0.75em;
+    }
+    h4{
+        font-size: 20px;
+        margin-bottom: 2em;
+        color: rgb(2, 112, 2);
+    }
+    aside{
+        background-color: rgb(249, 236, 222);
+        flex: 1 1 auto;
+        padding: 1em;
+        text-align: center;
+        border-top: 5px solid rgb(2, 129, 2);
+    }
+    /*aside ul*/
+    .artikel-vorschau{
+        list-style: none;
+    }
+    .artikel-vorschau li{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1em;
+        justify-content: center;
+    }
+    .artikel-vorschau a{
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(41, 25, 25);
+
+    }
+    .artikel-vorschau a:hover{
+        color: rgb(2, 185, 2);
+        text-decoration: underline;
+    }
+    .thumbnail-artikel{
+        width: 4em;
+        height: 4em;
+        margin-right: 1em;
+        border: 2px solid rgb(2, 129, 2);
+    } 
+   
     
     
 }
