@@ -5,173 +5,179 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    font-family: sans-serif;
+    font-size: 22px;
+    color: rgb(41, 25, 25);
+    border-top: 5px solid rgb(2, 129, 2);
+}
+.main-header{
+    background-color: rgb(249, 236, 222);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    margin-bottom: 3.5rem;
+}
+.artikel-layout{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    /* gap: 4rem; */
+}
+.container{
+    /*keine Flexbox, darum px statisch, vermeiden*/
+    width: 65%;
+    margin: auto;
+}
+h1{
+    font-size: 28px;
+    font-style: italic;
+    color: rgb(2, 112, 2);
+}
+h1::first-letter{
+    font-style: normal;
+}
+/*navi vermutlich anpassen mobile*/
+nav a:link{
+    margin-right: 1rem;
+    font-size: 20px;
+    font-weight: 500;
+}
+a:link{
+    color: rgb(2, 112, 2);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(2, 112, 2);
+}
+a:hover{
+    color: rgb(2, 185, 2);
+    text-decoration: underline;
+}
+.img-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.img-autor{
+    width: 3rem;
+    height: auto;
+    margin-right: 1rem;
+}
+.name-autor{
+    font-style: italic;
+    font-size: 18px;
+}
+.img-artikel{
+    /*automatisches skalieren*/
+    width: 70%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+article{
+    /*statt width flex-basis, damit shrink klappt*/
+    flex: 1 1 700px;
+    margin-bottom: 1.5rem;
+}
+h2{
+    font-size: 38px;
+    color: rgb(2, 112, 2);
+    margin-bottom: 1rem;
+}
+h3{
+    font-size: 28px;
+    color: rgb(2, 112, 2);
+    margin-bottom: 1rem;
+}
+ol,.kaliumquellen,p{
+    line-height: 1.25;
+    margin-bottom: 1rem;
+}
+ol,.kaliumquellen{
+    margin-left: 3rem;
+}
+/*Cta, Link*/
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.button{
+    font-size: 28px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(41, 25, 25);
+    border-radius: 2rem;
+    background-color: rgb(249, 208, 113);
+}
+.button:hover{
+    font-size: 38px;
+}
+article > p:last-of-type{
+    font-size: 34px;
+}
+h4{
+    font-size: 20px;
+    margin-bottom: 2rem;
+    color: rgb(2, 112, 2);
+}
+aside{
+    background-color: rgb(249, 236, 222);
+    flex: 1 1 auto;
+    padding: 1rem;
+    text-align: center;
+    border-top: 5px solid rgb(2, 129, 2);
+    margin-bottom: 3rem;
+}
+/*aside ul*/
+.artikel-vorschau{
+    list-style: none;
+}
+.artikel-vorschau li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+.artikel-vorschau a{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(41, 25, 25);
+
+}
+.artikel-vorschau a:hover{
+    color: rgb(2, 185, 2);
+    text-decoration: underline;
+}
+.thumbnail-artikel{
+    width: 4rem;
+    height: 4rem;
+    margin-right: 1rem;
+    border: 2px solid rgb(2, 129, 2);
+}
+.copyright{
+    font-size: 16px;
+}
 
 
 /*Desktop*/
 @media screen and (min-width: 40rem) {
-    /*kleiner Test zum orientieren*/
-    /* body{
-        background-color: rebeccapurple;
-    } */
-    body{
-        font-family: sans-serif;
-        font-size: 22px;
-        color: rgb(41, 25, 25);
-        border-top: 5px solid rgb(2, 129, 2);
-    } 
+
     .artikel-layout{
-        width: 100%;
-        display: flex;
         flex-direction: row;
-        align-items: start;
         gap: 4rem;
     }
-    .container{
-        /*keine Flexbox, darum px statisch, vermeiden*/
-        width: 65%;
-        margin: auto;
-    }
-    .main-header{
-        background-color: rgb(249, 236, 222);
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 1rem;
-        margin-bottom: 3.5rem;
-    }
-    h1{
-        font-size: 28px;
-        font-style: italic;
-        color: rgb(2, 112, 2);
-    }
-    h1::first-letter{
-        font-style: normal;
-    }
-    nav a:link{
-        margin-right: 1rem;
-        font-size: 20px;
-        font-weight: 500;
-    }
-    a:link{
-        color: rgb(2, 112, 2);
-        text-decoration: none;
-    }
-    a:visited{
-        color: rgb(2, 112, 2);
-    }
-    a:hover{
-        color: rgb(2, 185, 2);
-        text-decoration: underline;
-    }
-    .img-container{
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-    }
-    .img-autor{
-        width: 3rem;
-        height: auto;
-        margin-right: 1rem;
-    }
-    .name-autor{
-        font-style: italic;
-        font-size: 18px;
-    }
-    .img-artikel{
-        /*automatisches skalieren*/
-        width: 70%;
-        height: auto;
-        margin-bottom: 2rem;
-    }
+    
     article{
-        flex: 1 1 700px;
+        margin-bottom: 3rem;
         border-bottom: 5px solid rgb(2, 112, 2);
-        margin-bottom: 3rem;
-    }
-    h2{
-        font-size: 38px;
-        color: rgb(2, 112, 2);
-        margin-bottom: 1rem;
-    }
-    h3{
-        font-size: 28px;
-        color: rgb(2, 112, 2);
-        margin-bottom: 1rem;
-    }
-    ol,.kaliumquellen,p{
-        line-height: 1.25;
-        margin-bottom: 1rem;
-    }
-    ol,.kaliumquellen{
-        margin-left: 3rem;
-    }
-    /*Cta, Link*/
-    .btn-container{
-        display: flex;
-        justify-content: center;
-    }
-    .button{
-        font-size: 28px;
-        font-weight: bold;
-        display: inline-block;
-        /* height: 3rem;
-        width: 6rem; */
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-        padding: 0.5rem 1rem;
-        border: 1px solid rgb(41, 25, 25);
-        border-radius: 2rem;
-        background-color: rgb(249, 208, 113);
-    }
-    .button:hover{
-        font-size: 38px;
-    }
-    article > p:last-of-type{
-        font-size: 34px;
-        /* margin-bottom: 4rem; */
-    }
-    h4{
-        font-size: 20px;
-        margin-bottom: 2rem;
-        color: rgb(2, 112, 2);
     }
     aside{
-        background-color: rgb(249, 236, 222);
-        flex: 1 1 auto;
-        padding: 1rem;
-        text-align: center;
-        border-top: 5px solid rgb(2, 129, 2);
+        margin-bottom: 0;
     }
-    /*aside ul*/
-    .artikel-vorschau{
-        list-style: none;
-    }
-    .artikel-vorschau li{
-        display: flex;
-        align-items: center;
-        margin-bottom: 1rem;
-        justify-content: center;
-    }
-    .artikel-vorschau a{
-        font-size: 20px;
-        font-weight: bold;
-        color: rgb(41, 25, 25);
-
-    }
-    .artikel-vorschau a:hover{
-        color: rgb(2, 185, 2);
-        text-decoration: underline;
-    }
-    .thumbnail-artikel{
-        width: 4rem;
-        height: 4rem;
-        margin-right: 1rem;
-        border: 2px solid rgb(2, 129, 2);
-    }
-    .copyright{
-        font-size: 16px;
-    }
-   
-    
     
 }
