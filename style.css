@@ -41,7 +41,11 @@
     }
     h1{
         font-size: 28px;
+        font-style: italic;
         color: rgb(2, 112, 2);
+    }
+    h1::first-letter{
+        font-style: normal;
     }
     nav a:link{
         margin-right: 1rem;
@@ -81,11 +85,50 @@
     }
     article{
         flex: 1 1 700px;
+        border-bottom: 5px solid rgb(2, 112, 2);
+        margin-bottom: 3rem;
     }
     h2{
         font-size: 38px;
         color: rgb(2, 112, 2);
-        margin-bottom: 0.75rem;
+        margin-bottom: 1rem;
+    }
+    h3{
+        font-size: 28px;
+        color: rgb(2, 112, 2);
+        margin-bottom: 1rem;
+    }
+    ol,.kaliumquellen,p{
+        line-height: 1.25;
+        margin-bottom: 1rem;
+    }
+    ol,.kaliumquellen{
+        margin-left: 3rem;
+    }
+    /*Cta, Link*/
+    .btn-container{
+        display: flex;
+        justify-content: center;
+    }
+    .button{
+        font-size: 28px;
+        font-weight: bold;
+        display: inline-block;
+        /* height: 3rem;
+        width: 6rem; */
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        padding: 0.5rem 1rem;
+        border: 1px solid rgb(41, 25, 25);
+        border-radius: 2rem;
+        background-color: rgb(249, 208, 113);
+    }
+    .button:hover{
+        font-size: 38px;
+    }
+    article > p:last-of-type{
+        font-size: 34px;
+        /* margin-bottom: 4rem; */
     }
     h4{
         font-size: 20px;
@@ -124,7 +167,10 @@
         height: 4rem;
         margin-right: 1rem;
         border: 2px solid rgb(2, 129, 2);
-    } 
+    }
+    .copyright{
+        font-size: 16px;
+    }
    
     
     
